@@ -14,6 +14,11 @@ namespace FrankUnity.Pathfinding
         public Vector2Int Coordinate { get; }
         public Vector2 Center { get; }
 
-        
+        public Node(bool walkable, Vector2Int coordinate, Vector2 center)
+        {
+            Walkable = walkable;
+            Coordinate = coordinate;
+            Center = center;
+        }
     }
 }
